@@ -1,0 +1,64 @@
+{
+  "jarvis": {
+    "active": true,
+    "directingZone": "media-station",
+    "lastCommand": "Prioritize voiceover queue — ship episode 47 by EOD",
+    "voiceEnabled": true
+  },
+  "metrics": {
+    "activeAgents": 12,
+    "totalAgents": 15,
+    "systemsOnline": true
+  },
+  "globalTicker": [
+    "FORGE SYSTEMS STANDING BY",
+    "MEDIA PIPELINE: 3 ASSETS IN QUEUE",
+    "RECEPTION: 7 ACTIVE LEADS · 2 LIVE CALLS",
+    "WEB DIVISION: 4 CLIENT BUILDS IN PROGRESS",
+    "TRADE DESK: +$1,247.50 DAY P&L · 3 OPEN POSITIONS",
+    "KALSHI OPS: 5 CONTRACTS MONITORED · NEWS FEED LIVE",
+    "JARVIS DIRECTING MEDIA STATION"
+  ],
+  "zones": [
+    {
+      "id": "media-station",
+      "name": "MEDIA STATION",
+      "sector": "SECTOR 01",
+      "accent": "#00d4ff",
+      "statusLabel": "VIDEO PIPELINE",
+      "statusValue": "Ep. 47 — Voiceover"
+    },
+    {
+      "id": "reception-corp",
+      "name": "RECEPTION CORP",
+      "sector": "SECTOR 02",
+      "accent": "#00ff88",
+      "statusLabel": "LEADS & CALLS",
+      "statusValue": "7 leads · 2 live"
+    },
+    {
+      "id": "web-division",
+      "name": "WEB DIVISION",
+      "sector": "SECTOR 03",
+      "accent": "#b366ff",
+      "statusLabel": "CLIENT PROJECTS",
+      "statusValue": "4 active builds"
+    },
+    {
+      "id": "trade-desk",
+      "name": "TRADE DESK",
+      "sector": "SECTOR 04",
+      "accent": "#ffb020",
+      "statusLabel": "LIVE P&L",
+      "statusValue": "+$1,247.50"
+    },
+    {
+      "id": "kalshi-ops",
+      "name": "KALSHI OPS",
+      "sector": "SECTOR 05",
+      "accent": "#ff5566",
+      "statusLabel": "CONTRACTS & NEWS",
+      "statusValue": "5 active contracts"
+    }
+  ]
+}

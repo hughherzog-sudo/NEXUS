@@ -1,0 +1,14 @@
+{
+  "_comment": "Mirror of src/data/mockState.ts — wire REST/WebSocket to replace this file",
+  "jarvis": {
+    "active": true,
+    "directingZone": "media-station",
+    "lastCommand": "Prioritize voiceover queue — ship episode 47 by EOD",
+    "voiceEnabled": true
+  },
+  "metrics": {
+    "activeAgents": 12,
+    "totalAgents": 15,
+    "systemsOnline": true
+  }
+}
