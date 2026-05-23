@@ -74,7 +74,7 @@ export function useNexusState() {
         const data = await res.json()
         setState((prev) => normalizeApiState(data, prev))
       } catch {
-        setState(mockState)
+        // keep previous state
       }
     }
 
