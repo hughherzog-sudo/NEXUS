@@ -3,7 +3,7 @@ import { mockState } from '../data/mockState'
 import type { NexusState, Zone } from '../types'
 
 const POLL_INTERVAL = 5000
-const API_URL = 'http://198.199.87.20:8000/state'
+const API_URL = '/api/state'
 
 function isZoneArray(value: unknown): value is Zone[] {
   return (
