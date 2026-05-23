@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import mockData from "../data/mockState.json";
 
 const POLL_INTERVAL = 5000;
-const API_URL = "http://localhost:8000/state";
+const API_URL = "http://198.199.87.20:8000/state";
 
 export function useNexusState() {
   const [state, setState] = useState(mockData);
