@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import type { Agent, AgentStatus, NexusState, Zone } from '../types'
 
 const POLL_INTERVAL = 5000
-const API_URL = 'http://198.199.87.20:8000/state'
+const API_URL = '/api/state'
 
 const INITIAL_STATE: NexusState = {
   jarvis: {
