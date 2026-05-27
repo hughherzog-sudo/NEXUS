@@ -1,9 +1,24 @@
 import { useCallback, useEffect, useState } from 'react'
-import { mockState } from '../data/mockState'
 import type { Agent, AgentStatus, NexusState, Zone } from '../types'
 
 const POLL_INTERVAL = 5000
-const API_URL = '/api/state'
+const API_URL = 'http://198.199.87.20:8000/state'
+
+const INITIAL_STATE: NexusState = {
+  jarvis: {
+    active: false,
+    directingZone: null,
+    lastCommand: '',
+    voiceEnabled: true,
+  },
+  zones: [],
+  globalTicker: [],
+  metrics: {
+    activeAgents: 0,
+    totalAgents: 0,
+    systemsOnline: false,
+  },
+}
 
 interface ApiAgent {
   id?: string
@@ -158,7 +173,7 @@ function normalizeApiState(data: unknown, previous: NexusState): NexusState {
 }
 
 export function useNexusState() {
-  const [state, setState] = useState<NexusState>(mockState)
+  const [state, setState] = useState<NexusState>(INITIAL_STATE)
   const [expandedZoneId, setExpandedZoneId] = useState<string | null>(null)
   const [jarvisInput, setJarvisInput] = useState('')
 
